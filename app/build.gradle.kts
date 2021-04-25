@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -60,6 +61,8 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:${rootProject.extra["compose_version"]}")
     implementation("androidx.navigation:navigation-compose:1.0.0-alpha10")
     implementation("androidx.compose.material:material-icons-extended:${rootProject.extra["compose_version"]}")
+    implementation("com.arkivanov.decompose:decompose:0.2.3")
+    implementation("com.arkivanov.decompose:extensions-compose-jetpack:0.2.3")
     testImplementation("junit:junit:4.+")
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
